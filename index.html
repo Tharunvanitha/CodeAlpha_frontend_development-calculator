@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="calc" aria-label="Calculator">
+  <div class="screen" aria-live="polite">
+    <div class="expr" id="expr"></div>
+    <div class="main" id="main">0</div>
+    <div class="preview" id="preview"></div>
+  </div>
+  <div class="keys">
+    <button class="fn" data-k="clear">AC</button>
+    <button class="fn" data-k="sign">&plusmn;</button>
+    <button class="fn" data-k="percent">%</button>
+    <button class="op" data-k="/">&divide;</button>
+
+    <button data-k="7">7</button><button data-k="8">8</button><button data-k="9">9</button>
+    <button class="op" data-k="*">&times;</button>
+
+    <button data-k="4">4</button><button data-k="5">5</button><button data-k="6">6</button>
+    <button class="op" data-k="-">&minus;</button>
+
+    <button data-k="1">1</button><button data-k="2">2</button><button data-k="3">3</button>
+    <button class="op" data-k="+">+</button>
+
+    <button class="zero" data-k="0">0</button><button data-k=".">.</button>
+    <button class="eq" data-k="=">=</button>
+  </div>
+  <button class="back" data-k="back" aria-label="Backspace">&#9003; Delete last digit</button>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
